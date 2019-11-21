@@ -1,17 +1,16 @@
 # BAMAZON APP
 
-This is node aplication which:
-## Customer view
-* Show table of products which avaliable to buy;
-* You chose item and quantity of item which you want buy;
-* You got your results: if there are enough items - success - you get message that you bought item - price and summ; if not enough items - you get message that quantity is not avaliable;
-* All results of purchase save in data base - so next time quantity of products will be different;
+## Description
+This application is a simple command line-based storefront using the npm inquirer package and the MySQL with the npm mysql package.
 
-## Manager view 
+## MySQL Database Setup
+In order to run this application, you should have the MySQL database already set up on your machine. You will be able to create the Bamazon database and the products table with the SQL code found in Bamazon.sql. Run this code inside your MySQL client to populate the database, then you will be ready to proceed with running the Bamazon customer interface.
 
-List a set of menu options:
-*View Products for Sale
-*View Low Inventory
-*Add to Inventory
-*Add New Product
+## Customer Interface
+The customer interface allows the user to view the current inventory of store items: item IDs, descriptions, department in which the item is located and price. The user is then able to purchase one of the existing items by entering the item ID and the desired quantity. If the selected quantity is currently in stock, the user's order is fulfilled, displaying the total purchase price and updating the store database. If the desired quantity is not available, the user is prompted to modify their order.
 
+## Instructions
+git clone https://github.com/dziubliukbm/13_Bamazon_App
+cd bamazon
+npm install
+node bamazonCustomer.js
